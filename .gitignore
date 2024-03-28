@@ -1,5 +1,5 @@
-# Sublime Text project files
-Misc/ai_prod_env
+# Repo specific
+Misc/ai_prod_env/
 
 # Sublime Text project files
 *.sublime-workspace
