@@ -1,0 +1,929 @@
+
+
+<!-- Ⓒ	/*************************************************************************
+
+ *
+ * Globe - Tab Page CONFIDENTIAL Ⓒ
+ * __________________
+ *
+ *  2015 Leon Roe Sole Proprietor
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Leon Roe.
+ * The intellectual/technical concepts, 3D Sphere Design and all source code contained
+ * herein are proprietary to Leon Roe.
+ * Dissemination, reproduction, editing, publishing of this information, material design
+ * and concept is strictly forbidden. Unless prior written permission is obtained.
+ * This application is supported by Copyright, Designs and Patents Act 1988. Ⓒ
+ *
+
+	*************************************************************************/	-->
+
+
+
+
+	<html>
+    <head>
+    <Title> Globe - Your 3D Homepage </title>
+
+	<link rel="stylesheet" type="text/css" href="Globe Files/main.css">
+
+	<style>
+
+    	.bbFolder:hover {
+
+    		background-color: #bbbbbb;
+			cursor: pointer;
+
+    	}
+
+    	.obFolder:hover {
+
+    		background-color: #bbbbbb;
+			cursor: pointer;
+
+    	}
+
+	</style>
+
+	<script src="Globe Files/analytics.js"></script>
+
+	</head>
+
+	<body class="language-javascript" style ="overflow: hidden; -webkit-user-select: none; background: url(); background-color: #ffffff; background-size: cover; background-repeat:no-repeat; background-image:no-repeat;">
+
+		<div id="container" style="width: 100%; height: 100%;">
+
+
+
+		<!--   Marker System    -->
+
+
+		<div id="marker_container">
+
+		<a id="A1" class="marker0" data-index="0" data-oset="-12" data-oset2="-18" data-lat="51" data-long="26"  data-url="demoPopup.html"></a>
+		<a id="B1" class="marker0" data-index="1" data-oset="-12" data-oset2="-8" data-lat="26" data-long="26" data-url="demoPopup.html"></a>
+		<a id="C1" class="marker0" data-index="2" data-oset="-12" data-oset2="-2" data-lat="-20" data-long="26" data-url="demoPopup.html"></a>
+		<a id="D1" class="marker0" data-index="3" data-oset="-12" data-oset2="-2" data-lat="-45" data-long="26" data-url="demoPopup.html"></a>
+		<a id="A2" class="marker0" data-index="4" data-oset="35" data-oset2="40" data-lat="51" data-long="-6" data-url="demoPopup.html"></a>
+		<a id="B2" class="marker0" data-index="5" data-oset="35" data-oset2="12" data-lat="26" data-long="-6" data-url="demoPopup.html"></a>
+		<a id="C2" class="marker0" data-index="6" data-oset="35" data-oset2="-18" data-lat="-20" data-long="-6" data-url="demoPopup.html"></a>
+		<a id="D2" class="marker0" data-index="7" data-oset="35" data-oset2="-38" data-lat="-45" data-long="-6" data-url="demoPopup.html"></a>
+		<a id="E2" class="marker0" data-index="8" data-oset="35" data-oset2="-2" data-lat="3" data-long="-6" data-url="demoPopup.html"></a>
+		<a id="A3" class="marker0" data-index="9" data-oset="7" data-oset2="-2" data-lat="51" data-long="-38" data-url="demoPopup.html"></a>
+		<a id="B3" class="marker0" data-index="10" data-oset="7" data-oset2="-2" data-lat="26" data-long="-38" data-url="demoPopup.html"></a>
+		<a id="C3" class="marker0" data-index="11" data-oset="7" data-oset2="-6" data-lat="-20" data-long="-38" data-url="demoPopup.html"></a>
+		<a id="D3" class="marker0" data-index="12" data-oset="7" data-oset2="-8" data-lat="-45" data-long="-38" data-url="demoPopup.html"></a>
+		<a id="E3" class="marker0" data-index="13" data-oset="7" data-oset2="-4" data-lat="3" data-long="-38" data-url="demoPopup.html"></a>
+		<a id="A4" class="marker0" data-index="14" data-oset="6" data-oset2="-7" data-lat="51" data-long="-70" data-url="demoPopup.html"></a>
+		<a id="B4" class="marker0" data-index="15" data-oset="6" data-oset2="-5" data-lat="26" data-long="-70" data-url="demoPopup.html"></a>
+		<a id="C4" class="marker0" data-index="16" data-oset="6" data-oset2="-4" data-lat="-20" data-long="-70" data-url="demoPopup.html"></a>
+		<a id="D4" class="marker0" data-index="17" data-oset="6" data-oset2="-4" data-lat="-45" data-long="-70" data-url="demoPopup.html"></a>
+		<a id="E4" class="marker0" data-index="18" data-oset="6" data-oset2="-4" data-lat="3" data-long="-70" data-url="demoPopup.html"></a>
+		<a id="A5" class="marker0" data-index="19" data-oset="6" data-oset2="-8" data-lat="51" data-long="-102" data-url="demoPopup.html"></a>
+		<a id="B5" class="marker0" data-index="20" data-oset="6" data-oset2="-4" data-lat="26" data-long="-102" data-url="demoPopup.html"></a>
+		<a id="C5" class="marker0" data-index="21" data-oset="6" data-oset2="-4" data-lat="-20" data-long="-102" data-url="demoPopup.html"></a>
+		<a id="D5" class="marker0" data-index="22" data-oset="6" data-oset2="-4" data-lat="-45" data-long="-102" data-url="demoPopup.html"></a>
+		<a id="E5" class="marker0" data-index="23" data-oset="6" data-oset2="-4" data-lat="3" data-long="-102" data-url="demoPopup.html"></a>
+		<a id="A6" class="marker0" data-index="24" data-oset="8" data-oset2="-10" data-lat="51" data-long="-134" data-url="demoPopup.html"></a>
+		<a id="B6" class="marker0" data-index="25" data-oset="8" data-oset2="-4" data-lat="26" data-long="-134" data-url="demoPopup.html"></a>
+		<a id="C6" class="marker0" data-index="26" data-oset="8" data-oset2="0" data-lat="-20" data-long="-134" data-url="demoPopup.html"></a>
+		<a id="D6" class="marker0" data-index="27" data-oset="8" data-oset2="0" data-lat="-45" data-long="-134" data-url="demoPopup.html"></a>
+		<a id="E6" class="marker0" data-index="28" data-oset="8" data-oset2="-4" data-lat="3" data-long="-134" data-url="demoPopup.html"></a>
+		<a id="A7" class="marker0" data-index="29" data-oset="18" data-oset2="-24" data-lat="51" data-long="-166" data-url="demoPopup.html"></a>
+		<a id="B7" class="marker0" data-index="30" data-oset="18" data-oset2="-12" data-lat="26" data-long="-166" data-url="demoPopup.html"></a>
+		<a id="C7" class="marker0" data-index="31" data-oset="18" data-oset2="0" data-lat="-20" data-long="-166" data-url="demoPopup.html"></a>
+		<a id="D7" class="marker0" data-index="32" data-oset="18" data-oset2="8" data-lat="-45" data-long="-166" data-url="demoPopup.html"></a>
+		<a id="E7" class="marker0" data-index="33" data-oset="18" data-oset2="-4" data-lat="3" data-long="-166" data-url="demoPopup.html"></a>
+		<a id="A8" class="marker0" data-index="34" data-oset="-12" data-oset2="6" data-lat="51" data-long="-198" data-url="demoPopup.html"></a>
+		<a id="B8" class="marker0" data-index="35" data-oset="-12" data-oset2="2" data-lat="26" data-long="-198" data-url="demoPopup.html"></a>
+		<a id="C8" class="marker0" data-index="36" data-oset="-12" data-oset2="-9" data-lat="-20" data-long="-198" data-url="demoPopup.html"></a>
+		<a id="D8" class="marker0" data-index="37" data-oset="-12" data-oset2="-17" data-lat="-45" data-long="-198" data-url="demoPopup.html"></a>
+		<a id="E8" class="marker0" data-index="38" data-oset="-12" data-oset2="-4" data-lat="3" data-long="-198" data-url="demoPopup.html"></a>
+		<a id="A9" class="marker0" data-index="39" data-oset="-4" data-oset2="-4" data-lat="51" data-long="-233" data-url="demoPopup.html"></a>
+		<a id="B9" class="marker0" data-index="40" data-oset="-4" data-oset2="-4" data-lat="26" data-long="-233" data-url="demoPopup.html"></a>
+		<a id="C9" class="marker0" data-index="41" data-oset="-4" data-oset2="-6" data-lat="-20" data-long="-233" data-url="demoPopup.html"></a>
+		<a id="D9" class="marker0" data-index="42" data-oset="-4" data-oset2="-6" data-lat="-45" data-long="-233" data-url="demoPopup.html"></a>
+		<a id="E9" class="marker0" data-index="43" data-oset="-4" data-oset2="-4" data-lat="3" data-long="-233" data-url="demoPopup.html"></a>
+		<a id="A10" class="marker0" data-index="44" data-oset="-6" data-oset2="-6" data-lat="51" data-long="-265" data-url="demoPopup.html"></a>
+		<a id="B10" class="marker0" data-index="45" data-oset="-6" data-oset2="-4" data-lat="26" data-long="-265" data-url="demoPopup.html"></a>
+		<a id="C10" class="marker0" data-index="46" data-oset="-6" data-oset2="-4" data-lat="-20" data-long="-265" data-url="demoPopup.html"></a>
+		<a id="D10" class="marker0" data-index="47" data-oset="-6" data-oset2="-4" data-lat="-45" data-long="-265" data-url="demoPopup.html"></a>
+		<a id="CC1" class="marker0" data-index="48" data-oset="-6" data-oset2="-5" data-lat="51" data-long="60" data-url="demoPopup.html"></a>
+		<a id="CC2" class="marker0" data-index="49" data-oset="-6" data-oset2="-5" data-lat="26" data-long="60" data-url="demoPopup.html"></a>
+		<a id="CC3" class="marker0" data-index="50" data-oset="-6" data-oset2="-5" data-lat="-20" data-long="60" data-url="demoPopup.html"></a>
+		<a id="CC4" class="marker0" data-index="51" data-oset="-6" data-oset2="-5" data-lat="-45" data-long="60" data-url="demoPopup.html"></a>
+		</div>
+
+
+
+
+		<!-- ******************************  Colour Pickers  ****************************** -->
+
+
+
+		<div id="wheelBorder3">
+		<form action="" style="width: 175px;">
+		<div id="picker3">
+		<div class="farbtastic">
+		<div class="color" style="background-color: rgb(0, 255, 216);"></div>
+		<div class="wheel"></div>
+		<div class="overlay"></div>
+		<div class="h-marker marker" style="left: 110px; top: 180px;"></div>
+		<div class="sl-marker marker" style="left: 95px; top: 66px;"></div>
+		</div>
+		</div>
+		</form>
+		<div id="reset1">Reset</div>
+		</div>
+
+		<div id="wheelBorder4">
+		<form action="" style="width: 175px;">
+		<div id="picker4">
+		<div class="farbtastic">
+		<div class="color" style="background-color: rgb(0, 255, 216);"></div>
+		<div class="wheel"></div>
+		<div class="overlay"></div>
+		<div class="h-marker marker" style="left: 110px; top: 180px;"></div>
+		<div class="sl-marker marker" style="left: 95px; top: 66px;"></div>
+		</div>
+		</div>
+		</form>
+		</div>
+
+		<div id="wheelBorder5">
+		<form action="" style="width: 175px;">
+		<div id="picker5">
+		<div class="farbtastic">
+		<div class="color" style="background-color: rgb(0, 255, 216);"></div>
+		<div class="wheel"></div>
+		<div class="overlay"></div>
+		<div class="h-marker marker" style="left: 110px; top: 180px;"></div>
+		<div class="sl-marker marker" style="left: 95px; top: 66px;"></div>
+		</div>
+		</div>
+		</form>
+		</div>
+
+		<div id="wheelBorder6">
+		<form action="" style="width: 175px;">
+		<div id="picker6">
+		<div class="farbtastic">
+		<div class="color" style="background-color: rgb(0, 255, 216);"></div>
+		<div class="wheel"></div>
+		<div class="overlay"></div>
+		<div class="h-marker marker" style="left: 110px; top: 180px;"></div>
+		<div class="sl-marker marker" style="left: 95px; top: 66px;"></div>
+		</div>
+		</div>
+		</form>
+		</div>
+
+
+
+		<!-- ******************************  HUD  ****************************** -->
+
+
+		<div id="buttonBox">
+		<div id="markerButton3">&#9776</div>
+		<div id="settingsBox" style="font-size: 20;">
+		<div id="selectNews">Select News</div>
+		<div id="addNewMarker">+ Add Marker</div>
+    <div id="themeSelection">Themes</div>
+<!--    <div id="customTheme">Create Theme</div> -->
+   	<div id="moreOptions">Options</div>
+		<div id="selectModeMenu">Change Mode</div>
+    </div>
+	 	</div>
+
+
+		<div id="buttonBox2">
+		<div id="bookmarks">Bookmarks</div>
+		<div id="extensions">Extensions</div>
+		<div id="chromeApps">Chrome Apps</div>
+		<div id="recentlyVisited">Recent Sites</div>
+		</div>
+		<div id="buttonBox2Cover"></div>
+
+
+		<div id="bookmarksBox"></div>
+		<div id="recentlyVisitedBox"></div>
+		<div id="chromeAppsBox"></div>
+		<div id="extensionsBox">
+		<div id="extensionsShortcutBox">Extension Page</div>
+		</div>
+
+
+
+
+		<!-- ******************************  Settings Buttons  ****************************** -->
+
+
+		<div id="tab1tutorial"></div>
+
+		<div id="globeThemeTintBox">Colour Settings
+    	<div id="globeThemeCol1">Colour 1</div>
+    	<div id="globeThemeCol2">Colour 2</div>
+    	<div id="globeThemeAmount">Intensity: </div>
+    	<input id="colourSlider12" type="range" min="0" max="10" value="5" steps="10"></input>
+    	<div id="glowThemeTint">Glow Colour</div>
+    	<div id="reset2">Reset</div>
+    	</div>
+    	<div id="backlightTint"></div>
+    	<div id="backlightTintButton">Done</div>
+    	<div id="background3Dselector">Done</div>
+    	<div id="customLightTutorialButton">Done</div>
+
+    	<div id="globe3DselectBox">
+    	<div id="customText140">3D Background ON:</div>
+    	</div>
+
+    	<div id="toogleToolbar0box">
+    	<div id="toogleToolbar0T">Toggle Toolbar:</div>
+    	<input id="toggleToolbar0" class="toolbarToggle2" type="checkbox" checked></input>
+    	</div>
+    	<div id="toggleToolbar00">Done</div>
+
+
+    	<div id="globeLightBox">
+    	<div id="globeLightTitle">Custom Lighting</div>
+    	<div id="globeLight1T">Light 1:</div>
+    	<div id="globeLight2T">Light 2:</div>
+    	<div id="globeLight3T">Light 3:</div>
+    	<div id="globeLight4T">Light 4:</div>
+    	<input id="globeLight1" type="range" min="0" max="10" value="5" steps="20" ></input>
+    	<input id="globeLight2" type="range" min="0" max="10" value="5" steps="20" ></input>
+    	<input id="globeLight3" type="range" min="0" max="10" value="5" steps="20" ></input>
+    	<input id="globeLight4" type="range" min="0" max="10" value="5" steps="20" ></input>
+    	<div id="resetLightsT">Reset</div>
+    	</div>
+    	<div id="backlightLight"></div>
+
+    	<div id="welcome">Welcome..</div>
+    	<div id="thankyou">Thank You..</div>
+
+		<div id="zoomBox">
+		<input id="zoomSlider" type="range" min="1" max="8" value="5" steps="8"></input>
+		<div id="zoomText">Zoom of Globe:</div>
+		<div id="zoomBoxPlus">+</div>
+		<div id="zoomBoxMinus">-</div>
+		</div>
+		<div id="zoomButton">Done</div>
+
+		<div id="definitionBox">
+		<input id="definitionSlider" type="range" min="1" max="22" value="10" steps="22"></input>
+		<div id="definitionText">Graphics Quality</div>
+		<div id="definitionText2"><strong>Warning: </strong>The higher the definition the lower the performance.</div>
+		<div id="definitionPlus">+</div>
+		<div id="definitionMinus">-</div>
+		<div id="definitionConfirm">Confirm</div>
+		</div>
+
+		<div id="revertDefinitionBox">
+		<div id="revertDefinitionText">Would you like to keep the curent graphics settings?</div>
+		<input id="revertYes" type="button" value="Yes"></input>
+     	<input id="revertNo" type="button" value="No"></input>
+		</div>
+
+
+		<div id="matrixSelectionBox">
+		<div id="matrixSliderText1">Density:</div>
+		<div id="matrixSliderText2">Speed:</div>
+		<input id="matrixSlider1" class="matrixChange" type="range" min="20" max="500" value="120" steps="500" ></input>
+    	<input id="matrixSlider2" class="matrixChange" type="range" min="0" max="30" value="2" steps="30" ></input>
+    	<div id="matrixSelectionDone">Done</div>
+		</div>
+	 	<div id="matrixBacklight"></div>
+
+
+
+		<!-- Renderer Alpha Toggle -->
+
+
+		<div id="alphaBox">
+		<div id="alphaText">Select Black Background:</div>
+		<input id="alphaCheckbox" class="alphaCheckboxC" type="checkbox">
+		</div>
+		<div id="alphaCofirmButton">Done</div>
+
+
+
+		<!-- Particle System Toggle -->
+
+		<div id="particleBox">
+		<div id="particleText1">Multicoloured Particles:</div>
+		<div id="particleText2">Blue Particles:</div>
+		<div id="particleText3">White Star Particles:</div>
+		<div id="particleText4">Particles off:</div>
+		<input id="particleCheckbox1" class="particleCheckboxC" type="checkbox">
+		<input id="particleCheckbox2" class="particleCheckboxC" type="checkbox">
+		<input id="particleCheckbox3" class="particleCheckboxC" type="checkbox">
+		<input id="particleCheckbox0" class="particleCheckboxC" type="checkbox">
+		</div>
+
+		<!-- Globe Spin Weight -->
+
+		<div id="weightBox">
+		<div id="weightBoxText">Weight of Spin:</div>
+		<div id="weightBoxPlus">+</div>
+		<div id="weightBoxMinus">-</div>
+		<input id="weightSlider" type="range" min="3" max="15" value="7" steps="12" ></input>
+		</div>
+		<div id="weightBoxConfirm">Done</div>
+
+
+
+
+    	<!-- ******************************  Tab Container  ****************************** -->
+
+
+		<div id="tab_container">
+		<ul class="tabs">
+        <li id="tab11" rel="tab1">Themes</li>
+        <li id="tab22" rel="tab2">Custom Theme</li>
+        <li id="tab44" rel="tab4">Options</li>
+    	</ul>
+
+    	<div id="tab1" class="tab_content">
+<!--    	<div id="selectTheme0">Choose a Theme</div>  -->
+    	<div id="selectTheme">Select Theme</div>
+    	<div id="selectThemeImg" style=" background-image: url('Globe Resources/Images/theme1GImg.png');"></div>
+			<div id="theme3DContainer"></div>
+			<div id="saveTheme">Save Theme</div>
+  		<div id="selectThemeTitle">Theme Selection</div>
+  		<div id="selectCustomTheme">Create a Theme</div>
+  		<div id="selectThemeGT">Globe</div>
+  		<div id="selectThemeBGT">Background</div>
+  		<div id="selectThemeO">Options</div>
+  		<div id="selectThemeCont">Continue</div>
+  		<div id="greenTick1" style="background-image: url('Globe Resources/greenTick.png');"></div>
+  		<div id="greenTick2" style="background-image: url('Globe Resources/greenTick.png');"></div>
+  		<div id="greenTickText">Select Globe & Background Textures</div>
+			<div id="horizLine4"></div>
+    	</div>
+
+
+     	<div id="tab2" class="tab_content">
+     	<div id="customText1">Background</div>
+     	<div id="infoButton4">?</div>
+     	<div id="infoButton5">?</div>
+     	<div id="infoTextButton4">Custom background images should be 360 degree continuous textures.</div>
+     	<div id="infoTextButton5">Uploading a background texture from your computer will not sync with other devices using Globe.</div>
+     	<div id="customText2">Upload from URL:</div>
+     	<input id="customInput1" type="text"></input>
+     	<div id="globeCustomSubmit">Submit</div>
+     	<div id="customBackgroundReset">Reset</div>
+     	<div id="customText3">Upload from Computer:</div>
+     	<input id="backgroundCustomFile" type="file"></input>
+     	<div id="customText5">Globe</div>
+     	<div id="globeCustomReset">Reset</div>
+     	<div id="customText8">Upload from URL:</div>
+     	<input id="customInput8" type="text"></input>
+     	<div id="customBackgroundSubmit">Submit</div>
+     	<div id="customText10">Upload from Computer:</div>
+     	<input id="globeCustomFile" type="file"></input>
+			<label class="switch">
+  		<input id="switchbox3D" class="switchbox3D" type="checkbox" checked></input>
+  		<div class="slider round"></div>
+			</label>
+			<div id="customText14">3D Background:</div>
+			<div id="horizLine1"></div>
+			<div id="horizLine2"></div>
+     	</div>
+
+
+     	<div id="tab4" class="tab_content">
+  <!--   	<div id="globeThemeTint">Colouring</div>	-->
+    	<div id="tab4lightButton">Lighting</div>
+    	<div id="globeWeightSelector">Weight of Spin</div>
+    	<div id="particleSelector">Particle Selection</div>
+    	<div id="toolbarToggleButton">Toolbar Toggle</div>
+			<div id="searchEngineButton">Search Engine</div>
+     	<div id="performanceInstruct">Performance Issue</div>
+     	<div id="zoomButton2">Zoom</div>
+     	<div id="definitionButton">Graphics</div>
+     	<div id="resetGlobeSettings">Reset Globe</div>
+			<div id="horizLine3"></div>
+     	</div>
+ 		</div>
+
+	   	<div id="confirmResetBox">Are you sure you want to reset Globe to its default settings?
+     	<input id="confirmReset" type="button" value="Confirm"></input>
+     	<input id="cancelReset" type="button" value="Cancel"></input>
+     	</div>
+      	<div id="resetBacklight"></div>
+
+      	<div id="settingsClose">X</div>
+
+		</div>
+
+
+		<!-- ******************************   Theme Selection Menus  ******************************  -->
+
+
+		<div id="themeSelectionBox">
+		<div id="globeThemeTBack"> < </div>
+    	<div id="globeTheme6" class="themeSelect" style="background-image: url('Globe Resources/Images/theme1Img.png"></div>
+    	<div id="globeTheme6T">Milky Way</div>
+    	<div id="globeTheme11" class="themeSelect" style="background-image: url('Globe Resources/Images/theme2Img.png"></div>
+    	<div id="globeTheme11T">Sky Blue</div>
+    	<div id="globeTheme4"class="themeSelect"  style="background-image: url('Globe Resources/Images/theme3Img.png"></div>
+    	<div id="spannerIcon" style="background-image: url('Globe Resources/spanner.png');"></div>
+    	<div id="globeTheme4T">Digital Rain</div>
+    	<div id="globeTheme1" class="themeSelect" style="background-image: url('Globe Resources/Images/theme12Img.png"></div>
+    	<div id="globeTheme1T">White Space</div>
+    	<div id="globeTheme5" class="themeSelect" style="background-image: url('Globe Resources/Images/theme5Img.png"></div>
+    	<div id="spannerIcon2" style="background-image: url('Globe Resources/spanner.png');"></div>
+    	<div id="globeTheme5T">Starfield</div>
+    	<div id="globeTheme9" class="themeSelect" style="background-image: url('Globe Resources/Images/theme6Img.png"></div>
+    	<div id="globeTheme9T">Desert Sea</div>
+    	<div id="globeTheme10" class="themeSelect" style="background-image: url('Globe Resources/Images/theme7Img.png"></div>
+    	<div id="globeTheme10T">Tropical Sea</div>
+    	<div id="globeTheme7" class="themeSelect" style="background-image: url('Globe Resources/Images/theme8Img.png"></div>
+    	<div id="globeTheme7T">Pluto</div>
+    	<div id="globeTheme8" class="themeSelect" style="background-image: url('Globe Resources/Images/theme9Img.png"></div>
+    	<div id="globeTheme8T">Mars</div>
+    	<div id="globeTheme2" class="themeSelect" style="background-image: url('Globe Resources/Images/theme10Img.png"></div>
+    	<div id="globeTheme2T">Coloured Matrix</div>
+    	<div id="globeTheme3" class="themeSelect" style="background-image: url('Globe Resources/Images/theme11Img.png"></div>
+    	<div id="globeTheme3T">Black Matrix</div>
+    	<div id="globeTheme12"></div>
+    	<div id="globeTheme12T"></div>
+    	<div id="globeTheme13"></div>
+    	<div id="globeTheme13T"></div>
+    	<div id="globeTheme14"></div>
+    	<div id="globeTheme14T"></div>
+    	<div id="globeTheme15"></div>
+    	<div id="globeTheme15T"></div>
+    	<div id="globeTheme16"></div>
+    	<div id="globeTheme16T"></div>
+    	<div id="globeThemeExt"></div>
+		</div>
+
+		<div id="themeConfirmBox">
+		<div id="confirmThemeText">Select a different theme?</div>
+		<input id="themeSelectYes" type="button" value="Yes"></input>
+     	<input id="themeSelectNo" type="button" value="No"></input>
+		</div>
+
+		<div id="themeSelectionBox2">
+		<div id="globeThemeGBack"> < </div>
+    	<div id="globeThemeG1" class="themeSelectG" data-lights="6,7,8,6,0" data-stats="1" data-idx="12" name="clearGlobeGT" style="background-image: url('Globe Resources/Images/theme12GImg.png"></div>
+    	<div id="globeThemeG1T">Clear Globe</div>
+    	<div id="globeThemeG10" class="themeSelectG" data-lights="3,3,3,4,0" data-stats="1" data-idx="2" name="blueCloudsGT" style="background-image: url('Globe Resources/Images/theme2GImg.png"></div>
+    	<div id="globeThemeG10T">Earth 2</div>
+    	<div id="globeThemeG11"class="themeSelectG" data-lights="4,4.5,4,6,0" data-stats="1" data-idx="3" name="blueGasGT" style="background-image: url('Globe Resources/Images/theme3GImg.png"></div>
+    	<div id="globeThemeG11T">Clouds</div>
+    	<div id="globeThemeG9" class="themeSelectG" data-lights="2,2,1.5,3,0" data-stats="1" data-idx="4" name="saturn1GT" style="background-image: url('Globe Resources/Images/theme4GImg.png"></div>
+    	<div id="globeThemeG9T">Saturn 1</div>
+    	<div id="globeThemeG5" class="themeSelectG" data-lights="2,2,1.5,4,0" data-stats="1" data-idx="5" name="saturn2GT" style="background-image: url('Globe Resources/Images/theme5GImg.png"></div>
+    	<div id="globeThemeG5T">Saturn 2</div>
+    	<div id="globeThemeG6" class="themeSelectG" data-lights="3,2.5,2.5,4,0" data-stats="1" data-idx="6" name="neptuneGT" style="background-image: url('Globe Resources/Images/theme6GImg.png"></div>
+    	<div id="globeThemeG6T">Neptune</div>
+    	<div id="globeThemeG7" class="themeSelectG" data-lights="2.2,2.7,2.2,4.5,0" data-stats="1" data-idx="7" name="plutoGT" style="background-image: url('Globe Resources/Images/theme7GImg.png"></div>
+    	<div id="globeThemeG7T">Pluto</div>
+    	<div id="globeThemeG8" class="themeSelectG" data-lights="3,3.5,3,5,0" data-stats="1" data-idx="8" name="marsGT" style="background-image: url('Globe Resources/Images/theme8GImg.png"></div>
+    	<div id="globeThemeG8T">Mars</div>
+    	<div id="globeThemeG4" class="themeSelectG" data-lights="6,7,8,6,0" data-stats="3" data-idx="9" name="matrixGT" style="background-image: url('Globe Resources/Images/theme9GImg.png"></div>
+		<div id="globeThemeG4T">Digital</div>
+    	<div id="spannerIcon3" style="background-image: url('Globe Resources/spanner.png');"></div>
+    	<div id="globeThemeG2" class="themeSelectG" data-stats="4" data-lights="3,4,4,3,0" data-idx="10" style="background-image: url('Globe Resources/Images/theme10GImg.png"></div>
+    	<div id="globeThemeG2T">Matrix 1</div>
+    	<div id="globeThemeG3" class="themeSelectG" data-stats="4" data-lights="3,4,4,3,0" data-idx="11" style="background-image: url('Globe Resources/Images/theme11GImg.png"></div>
+    	<div id="globeThemeG3T">Matrix 2</div>
+    	<div id="globeThemeG12" class="themeSelectG" data-lights="6,7,8,6,0" data-stats="1" data-idx="1" name="blueLightsGT" style="background-image: url('Globe Resources/Images/theme1GImg.png"></div>
+    	<div id="globeThemeG12T">Earth 1</div>
+    	<div id="globeThemeG13" class="themeSelect"></div>
+    	<div id="globeThemeG13T"></div>
+    	<div id="globeThemeG14" class="themeSelect"></div>
+    	<div id="globeThemeG14T"></div>
+    	<div id="globeThemeG15" class="themeSelect"></div>
+    	<div id="globeThemeG15T"></div>
+    	<div id="globeThemeG16" class="themeSelect"></div>
+    	<div id="globeThemeG16T"></div>
+    	<div id="globeThemeExt2"></div>
+		</div>
+
+
+		<div id="themeSelectionBox3">
+		<div id="globeThemeBGBack"> < </div>
+    	<div id="globeThemeBG1" class="themeSelectBG" name="milkyWayBGT" style="background-image: url('Globe Resources/Images/theme1BGImg.png"></div>
+    	<div id="globeThemeBG1T">Milky Way</div>
+    	<div id="globeThemeBG2" class="themeSelectBG" name="blackStarBGT" style="background-image: url('Globe Resources/Images/theme2BGImg.png"></div>
+    	<div id="globeThemeBG2T">Deep Space</div>
+    	<div id="globeThemeBG3"class="themeSelectBG" name="mountainBGT"  style="background-image: url('Globe Resources/Images/theme3BGImg.png"></div>
+    	<div id="globeThemeBG3T">Snow Mountains</div>
+    	<div id="globeThemeBG4" class="themeSelectBG" name="tropicalBGT" style="background-image: url('Globe Resources/Images/theme4BGImg.png"></div>
+    	<div id="globeThemeBG4T">Tropical Waters</div>
+    	<div id="globeThemeBG5" class="themeSelectBG" name="pyramidBGT" style="background-image: url('Globe Resources/Images/theme5BGImg.png"></div>
+    	<div id="globeThemeBG5T">Rocky Waters</div>
+    	<div id="globeThemeBG7" class="themeSelectBG" name="starfieldBGT1" style="background-image: url('Globe Resources/Images/theme6BGImg.png"></div>
+    	<div id="globeThemeBG7T">Starfield White</div>
+    	<div id="globeThemeBG6" class="themeSelectBG" name="starfieldBGT2" style="background-image: url('Globe Resources/Images/theme7BGImg.png"></div>
+    	<div id="globeThemeBG6T">Starfield Black</div>
+    	<div id="globeThemeBG8" class="themeSelectBG" name="whiteSpaceBGT" style="background-image: url('Globe Resources/Images/theme8BGImg.png"></div>
+    	<div id="globeThemeBG8T">White Space</div>
+    	<div id="globeThemeBG9" class="themeSelectBG" name="blackSpaceBGT" style="background-image: url('Globe Resources/Images/theme9BGImg.png"></div>
+    	<div id="globeThemeBG9T">Black Space</div>
+    	<div id="globeThemeBG10" class="themeSelectBG"></div>
+    	<div id="globeThemeBG10T"></div>
+    	<div id="globeThemeBG11" class="themeSelectBG"></div>
+    	<div id="globeThemeBG11T"></div>
+    	<div id="globeThemeBG12" class="themeSelectBG"></div>
+    	<div id="globeThemeBG12T"></div>
+    	<div id="globeThemeBG13" class="themeSelectBG"></div>
+    	<div id="globeThemeBG13T"></div>
+    	<div id="globeThemeBG14" class="themeSelectBG"></div>
+    	<div id="globeThemeBG14T"></div>
+    	<div id="globeThemeBG15" class="themeSelectBG"></div>
+    	<div id="globeThemeBG15T"></div>
+    	<div id="globeThemeBG16" class="themeSelectBG"></div>
+    	<div id="globeThemeBG16T"></div>
+    	<div id="globeThemeExt3"></div>
+		</div>
+
+
+
+	<!-- ******************************  Marker Selection Types  ****************************** -->
+
+
+
+	<div id="configBoxSelection">
+	<div id="selectConfigBox">Website</div>
+	<div id="selectAppsBox">Chrome App</div>
+	<div id="selectBookmarksBox">Bookmark</div>
+	<div id="selectFileBox">File</div>
+	<div id="selectAppsBox0" style="background-image: url('Globe Resources/chromeIcon.png');"></div>
+	<div id="selectConfigBox0" style="background-image: url('Globe Resources/chromeIcon2.png');"></div>
+	<div id="selectBookmarksBox0" style="background-image: url('Globe Resources/image.png');"></div>
+	<div id="selectFileBox0" style="background-image: url('Globe Resources/file.png');"></div>
+	</div>
+
+	<div id="configAppsBox">
+	</div>
+	<div id="deleteButtonAA">X</div>
+
+	<div id="bookmarksBox12">
+	</div>
+
+	<div id="bookmarksBox101">
+	</div>
+
+
+
+	<!-- ******************************  Search Engine Selection  ****************************** -->
+
+
+	<div id="searchEngineSelection">
+	<div id="googleSearchText">Google</div>
+	<div id="bingSearchText">Bing</div>
+	<div id="yahooSearchText">Yahoo</div>
+	<div id="ecosiaSearchText">Ecosia</div>
+	<div id="googleSearchImg" class="searchEngine" data-idx="0" style="background-image: url('Globe Resources/googleLogo.png');"></div>
+	<div id="bingSearchImg" class="searchEngine" data-idx="1" style="background-image: url('Globe Resources/bingLogo.png');"></div>
+	<div id="yahooSearchImg" class="searchEngine" data-idx="2" style="background-image: url('Globe Resources/yahooLogo.png');"></div>
+	<div id="ecosiaSearchImg" class="searchEngine" data-idx="3" style="background-image: url('Globe Resources/ecosiaLogo.png');"></div>
+	</div>
+
+
+
+
+	<!-- ******************************  Config Box  ****************************** -->
+
+
+	<img id="imageDemo2"></img>
+	<img id="imageDemo"></img>
+	<input id="dataDiv"></input>
+	<canvas id='canvasT'></canvas>
+
+	<div id="backlight5"></div>
+	<div id="backlight2"></div>
+	<div id="backlight3"></div>
+
+	<img id="imgTest"></img>
+
+	<div id="configBox">
+
+	<div id="loadingOutline">
+	<div id="loadingBG">
+	<div id="spinningSquaresG">
+	<div id="spinningSquaresG_1" class="spinningSquaresG"></div>
+	<div id="spinningSquaresG_2" class="spinningSquaresG"></div>
+	<div id="spinningSquaresG_3" class="spinningSquaresG"></div>
+	<div id="spinningSquaresG_4" class="spinningSquaresG"></div>
+	<div id="spinningSquaresG_5" class="spinningSquaresG"></div>
+	<div id="spinningSquaresG_6" class="spinningSquaresG"></div>
+	<div id="spinningSquaresG_7" class="spinningSquaresG"></div>
+	<div id="spinningSquaresG_8" class="spinningSquaresG"></div>
+	</div>
+	</div>
+	<div id="loadingCover"></div>
+	</div>
+
+
+	<input id="SiteURL12" type="text"></input>
+	<img id="previewBox12"></img>
+	<img id="previewBox12Test"></img>
+	<div id="previewBox4">
+	<div id="previewBox4Text">
+	</div>
+	</div>
+
+	<div id="notificationMessage">Notifications are enabled when auto signed-in</div>
+
+	<div id="deleteButtonM">x</div>
+	<div id="text6">Custom Image</div>
+	<div id="text0">Site URL:</div>
+	<div id="text1">Image Title:</div>
+	<div id="customBox"></div>
+	<div id="addButton">Confirm</div>
+	<div id="infoButton2">?</div>
+	<div id="infoButton10">?</div>
+	<div id="infoTextButton10">Open up a new tab in your browser. Select a file from your computer and drag the file into the new tab. Copy the file path from the address bar and paste it into box below.</div>
+	<div id="infoButton3">*</div>
+	<div id="infoTextButton2">If you cant retrieve an image, you can customise your own below. You can also add an image using a web link, via the upload button. Always enter your URL before any image customisation.</div>
+	<div id="addButtonCover"></div>
+	<div id="fromLink">Upload Image</div>
+	<div id="removeImage">Reset Image</div>
+	<div id="markerColour">Background</div>
+	<div id="fontColour">Font</div>
+	<input id="SiteName" maxlength="15" type="text"></input>
+	<input id="fileAccess" type="file"></input>
+	</div>
+
+
+	<div id="linkBox">
+	<input id="linkURL" type="text"></input>
+	<div id="text5">Image Link:</div>
+	<div id="infoButton33">*</div>
+	<div id="addButton2">Confirm</div>
+	<div id="infoButton7">?</div>
+	<div id="infoTextButton7">Search for an image on the web. Locate the webpage with only that image. Copy and paste in the link in browser address bar.</div>
+	<div id="warningLinkText">** Image Too Big **</div>
+	</div>
+	<div id="backlightLink"></div>
+
+
+	<div id="wheelBorder">
+	<form action="" style="width: 400px;">
+	<div id="picker">
+	<div class="farbtastic">
+	<div class="color" style="background-color: rgb(0, 255, 216);"></div>
+	<div class="wheel"></div>
+	<div class="overlay"></div>
+	<div class="h-marker marker" style="left: 110px; top: 180px;"></div>
+	<div class="sl-marker marker" style="left: 95px; top: 66px;"></div>
+	</div>
+	</div>
+	</form>
+	</div>
+
+	<div id="wheelBorder2">
+	<form action="" style="width: 400px;">
+	<div id="picker2">
+	<div class="farbtastic">
+	<div class="color" style="background-color: rgb(0, 255, 216);"></div>
+	<div class="wheel"></div>
+	<div class="overlay"></div>
+	<div class="h-marker marker" style="left: 110px; top: 180px;"></div>
+	<div class="sl-marker marker" style="left: 95px; top: 66px;"></div>
+	</div>
+	</div>
+	</form>
+	</div>
+	<div id="backlightWheel"></div>
+
+
+
+		<!-- ****************************** News Globe ********************************** -->
+
+		<div id="newsBox">
+		<div id="newsTileBox">
+		<div id="newsTile1" class="newsTile" data-url="http://feeds.bbci.co.uk/news/world/rss.xml" data-idx="bbcNews" style="background-image: url(Globe Resources/Images/bbcNews.png)"></div>
+		<div id="newsTile1Tick" class="newsTick" style="background-image: url(Globe Resources/Images/greenTick.png)"></div>
+		<div id="newsTile2" class="newsTile" data-url="http://feeds.foxnews.com/foxnews/scitech" data-idx="foxNews" style="background-image: url(Globe Resources/Images/foxNews.png)"></div>
+		<div id="newsTile2Tick" class="newsTick" style="background-image: url(Globe Resources/Images/greenTick.png)"></div>
+		<div id="newsTile3" class="newsTile" data-url="http://rss.cnn.com/rss/cnn_world.rss.xml" data-idx="cnnNews" style="background-image: url(Globe Resources/Images/cnnNews.png)"></div>
+		<div id="newsTile3Tick" class="newsTick" style="background-image: url(Globe Resources/Images/greenTick.png)"></div>
+		<div id="newsTile4" class="newsTile" data-url="http://www.newslookup.com/rss/business/bloomberg.rss" data-idx="bloomberg" style="background-image: url(Globe Resources/Images/bloomberg.png)"></div>
+		<div id="newsTile4Tick" class="newsTick" style="background-image: url(Globe Resources/Images/greenTick.png)"></div>
+		<div id="newsTile5" class="newsTile" data-url="http://feeds.bbci.co.uk/sport/rss.xml?edition=int" data-idx="bbcSport" style="background-image: url(Globe Resources/Images/bbcSport.png)"></div>
+		<div id="newsTile5Tick" class="newsTick" style="background-image: url(Globe Resources/Images/greenTick.png)"></div>
+		<div id="newsTile6" class="newsTile"></div>
+		<div id="newsTile6Tick" class="newsTick" style="background-image: url(Globe Resources/Images/greenTick.png)"></div>
+		<div id="newsTile7" class="newsTile"></div>
+		<div id="newsTile7Tick" class="newsTick" style="background-image: url(Globe Resources/Images/greenTick.png)"></div>
+		<div id="newsTile8" class="newsTile"></div>
+		<div id="newsTile8Tick" class="newsTick" style="background-image: url(Globe Resources/Images/greenTick.png)"></div>
+		<div id="newsTile9" class="newsTile"></div>
+		<div id="newsTile9Tick" class="newsTick" style="background-image: url(Globe Resources/Images/greenTick.png)"></div>
+		<div id="newsTile10" class="newsTile"></div>
+		<div id="newsTile10Tick" class="newsTick" style="background-image: url(Globe Resources/Images/greenTick.png)"></div>
+		<div id="newsTile11" class="newsTile"></div>
+		<div id="newsTile11Tick" class="newsTick" style="background-image: url(Globe Resources/Images/greenTick.png)"></div>
+		<div id="newsTile12" class="newsTile"></div>
+		<div id="newsTile12Tick" class="newsTick" style="background-image: url(Globe Resources/Images/greenTick.png)"></div>
+		<div id="newsTile13" class="newsTile"></div>
+		<div id="newsTile13Tick" class="newsTick" style="background-image: url(Globe Resources/Images/greenTick.png)"></div>
+		<div id="newsTile14" class="newsTile"></div>
+		<div id="newsTile14Tick" class="newsTick" style="background-image: url(Globe Resources/Images/greenTick.png)"></div>
+		<div id="newsTile15" class="newsTile"></div>
+		<div id="newsTile15Tick" class="newsTick" style="background-image: url(Globe Resources/Images/greenTick.png)"></div>
+		<div id="newsTile16" class="newsTile"></div>
+		<div id="newsTile16Tick" class="newsTick" style="background-image: url(Globe Resources/Images/greenTick.png)"></div>
+		<div id="newsBoxMargin"></div>
+		</div>
+		<div id="navigationBar">
+		<div id="selectCount">0/16 Selected</div>
+		<div id="continueNews">Continue</div>
+		</div>
+		</div>
+
+		<!-- ******************************  Systematic HTML  ****************************** -->
+
+
+		<!-- Feedback Form -->
+
+
+		<div id="feedbackBacklight"></div>
+		<div id="feedbackButton" style="background-image: url('Globe Resources/alertFeedback.png');"></div>
+		<div id="feedbackQuery">Provide some quick feedback?
+		<div id="feedbackQuery1">OK</div>
+		<div id="feedbackQuery2">Not right now</div>
+		</div>
+
+
+		<!-- Performance Check -->
+
+
+		<div id="questionmark" style="background-image: url('Globe Resources/questionmark.png');"></div>
+
+
+
+		<!-- Performance Enhancement -->
+
+
+		<div id="performanceBox">
+		<div id="performanceText1">Are you experiencing poor performance?</div>
+		<input id="performanceButton1" type="button" value="Yes"></input>
+     	<input id="performanceButton2" type="button" value="No"></input>
+		</div>
+
+		<div id="performanceBox2">
+		<div id="performanceBox2Text">
+		<br>------------------------- Method 1 --------------------------</br>
+		<br>1. Input into the search bar: chrome://settings</br>
+		<br>2. Click the 'Show advanced settings' link</br>
+		<br>3. Scroll down to the 'System section' and ensure the 'Use hardware acceleration when available' checkbox is checked</br>
+		<br>4. Restart your Chrome browser</br></div>
+		<div id="performanceBox2TextB">
+		<br>------------------------- Method 2 --------------------------</br>
+		<br>1. Input into the search bar: chrome://flags</br>
+		<br>2. Enable the flag called 'Override software rendering list'</br>
+		<br>3. Restart your Chrome browser</br>
+		</div>
+		<input id="performanceButton3" type="button" value="Completed"></input>
+     	<input id="performanceButton4" type="button" value="Not Yet Completed "></input>
+		</div>
+
+		<div id="performanceBox3">
+		<div id="performanceText4">Have these steps increased the performance?</div>
+		<input id="performanceButton5" type="button" value="Yes"></input>
+     	<input id="performanceButton6" type="button" value="No"></input>
+		</div>
+
+		<div id="performanceBacklight"></div>
+
+		<div id="performanceBox4">
+		<iframe id="performanceFrame" src="https://docs.google.com/forms/d/e/1FAIpQLSfBVQj-0q7DfD2rYq6ERSOBljcpg1uiQna5jFeVpSI5hrZeRw/viewform?usp=sf_link" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" z-index="300">Loading...</iframe>
+		</div>
+
+
+
+
+  		<!-- ******************************  Systematic HTML  ******************************  -->
+
+
+			<!--  Tutorial -->
+
+			<div id="tutorialContainer">
+			<div id="welcomeToGlobe">Welcome To Globe</div>
+			<div id="whatsYourName">What's your name?</div>
+			<div id="toolbarChooseText">Would you like to add the Chrome toolbar?</div>
+			<div id="nameGreeting"></div>
+			<div id="selectThemeMessage">Select your theme</div>
+			<div id="selectYourMode">Select your mode</div>
+			<div id="selectEngineMessage">Select your search engine</div>
+			<input id="nameInput"></input>
+			<div id="selectThemeTutorial">Themes</div>
+			<div id="toolbarChooseYes">Yes</div>
+			<div id="toolbarChooseNo">No</div>
+			</div>
+
+
+
+  		<input id="screensaverButton" type="button" value="Screensaver"></input>
+  		<div id="backlightScreen"></div>
+
+
+		<div id="feedbackBox2">
+		<iframe id="feedbackFrame" src="https://docs.google.com/forms/d/e/1FAIpQLSdJdW0Iz5NJZqX-TaPMkLz3s1VWzDNn1lzPMCQPlyeUH96Xug/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" z-index="300">Loading...</iframe>
+		</div>
+
+		<div id="randomiseGT">Randomise Globe Texture</div>
+		<div id="randomiseBGT">Randomise Background Texture</div>
+
+
+		<div id="noConnectionBG">
+		<div id="noConnection">No Internet Connection</div>
+		</div>
+
+		<div id="circle"></div>
+		<div id="backlight6"></div>
+		<div id="backlight7"></div>
+		<div id="backlight8"></div>
+		<div id="backlight12"></div>
+
+		<form id="googleForm" method="get" action="http://www.google.com/search">
+		<input id="googleSearch" type="text" name="q" size="31" maxlength="255" autocomplete="off" value="" />
+		</form>
+
+		<form id="yahooForm" method="get" action="http://www.yahoo.com/search">
+		<input id="yahooSearch" type="text" name="q" size="31" maxlength="255" autocomplete="off" value="" />
+		</form>
+
+		<form id="bingForm" method="get" action="http://www.bing.com/search">
+		<input id="bingSearch" type="text" name="q" size="31" maxlength="255" autocomplete="off" value="" />
+		</form>
+
+		<form id="ecosiaForm" method="get" action="http://www.ecosia.com/search">
+		<input id="ecosiaSearch" type="text" name="q" size="31" maxlength="255" autocomplete="off" value="" />
+		</form>
+
+
+		<div id="list">
+		</div>
+
+
+		<div id="disableCover"></div>
+		<div id="disableText1">Your Free Trial Has Expired..</div>
+		<div id="trialExpiraryBox">
+		<input id="paidNavigation" value="FULL VERSION"></input>
+		<input id="paidNavigation2" value="Remove Globe"></input>
+		</div>
+
+
+		<img id="imgTester"></img>
+		<canvas id="canvas1T" width=300 height=300></canvas>
+		<canvas id="canvas2T" width=150 height=150></canvas>
+
+
+		<div id="bookmarksEmpty"></div>
+
+    	<div id="modeSwitchBox">
+    	<input id="modeSwitch" type="range" value="0" steps="1" max="2"></input>
+    	<div id="modeSliderText"></div>
+    	<div id="modeSelector">Select</div>
+    	</div>
+
+			<div id="modeSelectionBox">
+			<div id="mode1Text">Search Mode</div>
+			<div id="mode2Text">News Mode</div>
+			<div id="mode1Box" style="background-image: url('Globe Resources/mode1.png')"></div>
+			<div id="mode2Box"></div>
+			</div>
+
+
+    	<label id="modeSwitch101" class="modeSwitch0">
+  		<input id="modeSwitch00" type="checkbox" checked>
+  		<div class="mode0 round"></div>
+		</label>
+
+
+    	<div id="connectionMessage">No Internet Connection<strong>...</strong></div>
+
+		<div id="googleSearchImage" style="background-color: #ffffff"></div>
+		<canvas id="canvasG"></canvas>
+		<div class="uil-ring-css" style="transform:scale(0.18); position: absolute; top: 37%; z-index: -1;"><div>
+
+		</div>
+
+
+
+
+		<!-- ******************************  File System  ****************************** -->
+
+
+		<script src="Globe Files/database.js"></script>
+		<script src="Globe Files/Resource Files/jquery-3.1.1.js"></script>
+<!--	<script src="Globe Files/Resource Files/UniformsLib.js"></script>		-->
+		<script src="Globe Files/shaders.js"></script>
+		<script src="Globe Files/eventPage.js"></script>
+
+
+		</script>
+
+
+</body>
+</html>
